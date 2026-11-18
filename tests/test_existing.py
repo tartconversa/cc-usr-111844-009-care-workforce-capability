@@ -58,5 +58,12 @@ class ExistingContracts(unittest.TestCase):
     def test_group_presence(self):
         self.assertEqual(len(group_rows([{},dict(x=None)],['x'])),2)
 
+    def test_contracts_do_not_create_two_people(self):
+        rows=self.study.tables['roster']
+        self.assertEqual(len(workforce.person_contracts(rows,'c1')),2)
+        self.assertEqual(workforce.contract_shares(rows),{'c1':1})
+        cert=self.study.tables['certificates']
+        self.assertEqual(workforce.active_certificates(cert,'2026-12-31'),[])
+
 if __name__=='__main__':
     unittest.main()
