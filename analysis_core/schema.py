@@ -1,0 +1,1 @@
+SCHEMA = {'roster': ['person', 'facility', 'district', 'share', 'planned_hours', 'actual_hours'], 'certificates': ['person', 'skill', 'start', 'end'], 'training': ['person', 'course', 'start', 'end', 'passed', 'retained_at'], 'tasks': ['district', 'month', 'task', 'hours', 'combinations'], 'commitments': ['facility', 'month', 'task', 'hours']}

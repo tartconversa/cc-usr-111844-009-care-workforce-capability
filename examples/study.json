@@ -1,0 +1,48 @@
+{
+  "name": "care-workforce-capability",
+  "tables": {
+    "roster": [
+      {
+        "person": "c1",
+        "facility": "f1",
+        "district": "a",
+        "share": 0.5,
+        "planned_hours": 80,
+        "actual_hours": 70
+      },
+      {
+        "person": "c1",
+        "facility": "f2",
+        "district": "a",
+        "share": 0.5,
+        "planned_hours": 80,
+        "actual_hours": null
+      }
+    ],
+    "certificates": [
+      {
+        "person": "c1",
+        "skill": "special",
+        "start": "2026-01-01",
+        "end": "2026-12-31"
+      }
+    ],
+    "training": [],
+    "tasks": [
+      {
+        "district": "a",
+        "month": "2026-11",
+        "task": "lift",
+        "hours": 20,
+        "combinations": [
+          [
+            "general",
+            "special"
+          ]
+        ]
+      }
+    ],
+    "commitments": []
+  },
+  "options": {}
+}

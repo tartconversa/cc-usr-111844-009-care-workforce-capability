@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "care-workforce-capability"
+version = "0.1.0"
+description = "研究资料核对与原始查询"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["analysis_core*"]
